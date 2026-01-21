@@ -31,7 +31,7 @@ btnNo.addEventListener("click", () => {
 
         moveNoButton();
     } else {
-        valText.innerText = "Ab bol… Ab bolna 🤣😂🤣";
+        valText.innerText = "Ab bol.....Ab bolna 🤣😂🤣";
         valText.style.color = "red";
         valText.style.fontSize = "clamp(28px,5vw,60px)";
         btnNo.style.display='none';

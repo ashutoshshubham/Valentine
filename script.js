@@ -17,13 +17,17 @@ const MAX_ITEMS = 20;
 const isLowEndMobile = window.innerWidth < 480;
 
 const messages = [
-    "Roses are red, violets are blue, I think I have a crush, do you too?",
+    // "Roses are red, violets are blue, I think I have a crush, do you too?",
+    "ना बंबो?😕",
     "Tere Dil Pe Haq Mera Hai,Tu Sanam Beshaq Mera Hai😍",
-    "Would you grab my arm? I want to tell my friends I’ve been touched by an angel.",
-    "Teri Nazron Ka Dil Pe Hua Hai Asar,Tu Mera Mehboob Hai Jaana,Teri Ulfat Mein Jeeta Har Pal,Tu Ik Tohfa Hai Khuda Ka",
-    "Once you go cupid, the rest are just stupid!",
-    "Le Chale Tumhe Taaron Ke Shehar Mein😂",
+    // "Would you grab my arm? I want to tell my friends I’ve been touched by an angel.",
+    "बन जा तू मेरी रानी तेनु चाय पीला दूंगा😋",
+    "coffee? कुछ देसी/अंग्रेजी wala chiz?😂",
+    "Teri Nazron Ka Dil Pe Hua Hai Asar,Tu Mera Mehboob Hai Jaana",
+    // "Once you go cupid, the rest are just stupid!",
+    "Le Chale Tumko Taaron Ke Shehar Mein😂",
     "Please!! 😭",
+    "Ha bol😠",
 ];
 
 /* 🔥 LIGHT EMOJIS (mobile friendly) */

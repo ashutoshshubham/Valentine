@@ -25,9 +25,9 @@ const messages = [
     "coffee? कुछ देसी/अंग्रेजी wala chiz?😂",
     "Teri Nazron Ka Dil Pe Hua Hai Asar,Tu Mera Mehboob Hai Jaana🤗",
     // "Once you go cupid, the rest are just stupid!",
+    "Please!! 😭",
     "Le Chale Tumko Taaron Ke Shehar Mein😂",
     "और वही से फेक दे😤",
-    "Please!! 😭",
     "Ha bol😠",
 ];
 

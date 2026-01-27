@@ -23,9 +23,10 @@ const messages = [
     // "Would you grab my arm? I want to tell my friends I’ve been touched by an angel.",
     "बन जा तू मेरी रानी तेनु चाय पीला दूंगा😋",
     "coffee? कुछ देसी/अंग्रेजी wala chiz?😂",
-    "Teri Nazron Ka Dil Pe Hua Hai Asar,Tu Mera Mehboob Hai Jaana",
+    "Teri Nazron Ka Dil Pe Hua Hai Asar,Tu Mera Mehboob Hai Jaana🤗",
     // "Once you go cupid, the rest are just stupid!",
     "Le Chale Tumko Taaron Ke Shehar Mein😂",
+    "और वही से फेक दे😤",
     "Please!! 😭",
     "Ha bol😠",
 ];

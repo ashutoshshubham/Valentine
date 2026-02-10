@@ -18,16 +18,17 @@ const isLowEndMobile = window.innerWidth < 480;
 
 const messages = [
     // "Roses are red, violets are blue, I think I have a crush, do you too?",
-    "ना बंबो?😕",
+    "ना बनबो?😕",
     "Tere Dil Pe Haq Mera Hai,Tu Sanam Beshaq Mera Hai😍",
     // "Would you grab my arm? I want to tell my friends I’ve been touched by an angel.",
-    "बन जा तू मेरी रानी तेनु चाय पीला दूंगा😋",
-    "coffee? कुछ देसी/अंग्रेजी wala chiz?😂",
     "Teri Nazron Ka Dil Pe Hua Hai Asar,Tu Mera Mehboob Hai Jaana🤗",
+    "बन जा तू मेरी रानी तेनु चाय पीला दूंगा☕ (Dolly की चाय😂)",
+    "Modi G की चाय?😂",
+    `coffee??? \n कुछ देसी/अंग्रेजी wala?🥂🍻`,
     // "Once you go cupid, the rest are just stupid!",
     "Please!! 😭",
-    "Le Chale Tumko Taaron Ke Shehar Mein😂",
-    "और वही से फेक दे😤",
+    "Le Chale Tumko Taaron Ke Shehar Mein🌟⭐",
+    "और वही से नीचे फेक दे😤",
     "Ha bol😠",
 ];
 
@@ -35,9 +36,14 @@ const messages = [
 const heartEmojis = ["❤️", "💖", "💘"];
 const confetti = ["✨", "🎉",];
 
+
 /* ---------- NO BUTTON ---------- */
 btnNo.addEventListener("click", () => {
     if (index < messages.length) {
+        if (index != 0) {
+            btnYes.innerText = "YES 😍";
+            btnNo.innerText = "NO 🙃";
+        }
         valText.innerText = messages[index++];
         yesSize += 20;
         yesFont += 4;
@@ -52,12 +58,20 @@ btnNo.addEventListener("click", () => {
         valText.style.fontSize = "clamp(28px,5vw,60px)";
         btnNo.style.display = "none";
         btnYes.style.display = "inline-block";
+        btnYes.innerText = `Acha thik hai🤦😂...\nYESSS💝`;
+        btnYes.style.width = 250 + "px";
+        btnYes.style.fontSize = 30 + "px";
     }
 });
 
 /* ---------- YES BUTTON ---------- */
 btnYes.addEventListener("click", () => {
-    valText.innerText = "HAPPY VALENTINE'S DAY 🥰💘😘";
+    valText.innerHTML = `
+    My heart choose you, again and again ❤️🥰<br><br>
+    You make my heart do happy things 💓✨<br><br>
+    With you, everything feels right 💞✨<br><br>
+    HAPPY VALENTINE'S DAY 🥰💘😘
+`;
     valText.style.color = "green";
     valText.style.fontSize = "clamp(28px,5vw,55px)";
     valText.style.textAlign = "center";
@@ -104,6 +118,6 @@ function createFloatingItem() {
 
     setTimeout(() => {
         span.remove();
-        activeItems--;
-    }, 5000);
+        // activeItems--;
+    }, 3000);
 }

@@ -5,50 +5,61 @@
     font-family: "Poppins", sans-serif;
 }
 
+/* 🔥 BODY – scroll friendly */
 body {
-    height: 100vh;
+    min-height: 100vh;
     background: linear-gradient(135deg, #ff9a9e, #fad0c4);
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 20px;
 }
 
+/* 📦 MAIN CARD */
 .container {
     background: #fff;
-    padding: 20px 20px 40px;   /* bottom padding increase */
+    padding: 20px 20px 40px;
     border-radius: 24px;
     text-align: center;
     box-shadow: 0 20px 40px rgba(0,0,0,0.25);
     max-width: 500px;
-    width: 90%;
-    min-height: 400px;        /* 🔥 IMPORTANT */
+    width: 100%;
+    min-height: 400px;
     animation: pop 0.6s ease;
-
-    
 }
 
-
+/* ✨ POP ANIMATION */
 @keyframes pop {
-    from { transform: scale(0.8); opacity: 0; }
-    to { transform: scale(1); opacity: 1; }
+    from {
+        transform: scale(0.85);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
+/* 💬 MESSAGE TEXT */
 #val_text {
     font-size: clamp(22px, 4vw, 32px);
     margin-bottom: 30px;
-    text-align: center; 
-    /* transition: all 0.3s ease; */
+    text-align: center;
+    word-wrap: break-word;
 }
 
+/* 🔘 BUTTON CONTAINER */
 .btn-box {
     display: flex;
     justify-content: center;
     gap: 20px;
     position: relative;
-    
+    flex-wrap: wrap;
 }
 
+/* 🔘 COMMON BUTTON */
 .btn {
     padding: 14px 28px;
     font-size: 16px;
@@ -58,23 +69,26 @@ body {
     transition: all 0.25s ease;
 }
 
+/* ✅ YES */
 .yes {
     background: #28a745;
-    color: white;
+    color: #fff;
 }
 
+/* ❌ NO */
 .no {
     background: #dc3545;
-    color: white;
+    color: #fff;
     position: relative;
     transition: transform 0.2s ease;
 }
 
+/* ✨ HOVER */
 .btn:hover {
     transform: scale(1.12);
 }
 
-/* hearts animation */
+/* ❤️ HEARTS LAYER */
 .hearts {
     position: fixed;
     inset: 0;
@@ -83,13 +97,15 @@ body {
     z-index: 9999;
 }
 
+/* ❤️ FLOATING ITEM */
 .hearts span {
-    position: absolute;
+    position: fixed;
     bottom: -20px;
     animation: floatUp linear forwards;
     will-change: transform, opacity;
 }
 
+/* 💖 FLOAT ANIMATION */
 @keyframes floatUp {
     from {
         transform: translateY(0);
@@ -101,12 +117,25 @@ body {
     }
 }
 
+/* 📱 MOBILE OPTIMIZATION */
+@media (max-width: 480px) {
+    body {
+        align-items: flex-start;
+    }
 
-/* mobile extra */
-@media (max-width: 400px) {
     .container {
+        margin-top: 40px;
+        margin-bottom: 40px;
         min-height: 360px;
         padding-bottom: 70px;
     }
-}
 
+    #val_text {
+        font-size: clamp(20px, 5vw, 28px);
+    }
+
+    .btn {
+        font-size: 15px;
+        padding: 12px 24px;
+    }
+}

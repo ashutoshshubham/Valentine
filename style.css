@@ -131,7 +131,7 @@ body {
     }
 
     #val_text {
-        font-size: clamp(20px, 5vw, 28px);
+        font-size: clamp(28px, 5vw, 50px);
     }
 
     .btn {

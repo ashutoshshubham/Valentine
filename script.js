@@ -24,12 +24,12 @@ const messages = [
     "Teri Nazron Ka Dil Pe Hua Hai Asar,Tu Mera Mehboob Hai Jaana🤗",
     "बन जा तू मेरी रानी तेनु चाय पीला दूंगा☕ (Dolly की चाय😂)",
     "Modi G की चाय?😂",
-    `coffee??? \n कुछ देसी/अंग्रेजी wala?🥂🍻`,
+    `coffee??? \n\n कुछ देसी/अंग्रेजी wala?🥂🍻`,
     // "Once you go cupid, the rest are just stupid!",
     "Please!! 😭",
     "Le Chale Tumko Taaron Ke Shehar Mein🌟⭐",
     "और वही से नीचे फेक दे😤",
-    "Ha bol😠",
+    "Ha bol....😠",
 ];
 
 /* 🔥 LIGHT EMOJIS (mobile friendly) */
@@ -58,7 +58,7 @@ btnNo.addEventListener("click", () => {
         valText.style.fontSize = "clamp(28px,5vw,60px)";
         btnNo.style.display = "none";
         btnYes.style.display = "inline-block";
-        btnYes.innerText = `Acha thik hai🤦😂...\nYESSS💝`;
+        btnYes.innerText = `Acha thik hai🤦😂...\nYESSS💝💖`;
         btnYes.style.width = 250 + "px";
         btnYes.style.fontSize = 30 + "px";
     }
